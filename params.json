@@ -1,0 +1,6 @@
+{
+  "name": "MIDIBox FB-01 Programmer",
+  "tagline": "Yamaha FB-01 4-op FM Synth MIDI CC proxy / programmer",
+  "body": "## Introduction\r\n\r\nThis project is an early-stage MIDI CC to SysEx translation firmware based on the MIDIBox core\r\nand allows you to semi-realtime control the parameters of your Yamaha FB-01 4-op FM Synthesizer\r\nby sending MIDI Controller Change messages instead of SysEx, making it useable in every DAW / MIDI\r\nSequencer.\r\n\r\n## CC Map\r\n\r\n```\r\nCC 50 to 53: OP1-4 \"Volume\"\r\nCC 54 to 57: OP1-4 \"Volume Fine\"\r\nCC 58 to 61: OP1-4 Response Curb\r\nCC 62 to 65: OP1-4 Depth Level\r\nCC 66 to 69: OP1-4 Multiplier\r\nOP 70 to 73: OP1-4 Fine Tuning\r\nOP 74 to 77: OP1-4 Attack Time\r\nOP 78 to 81: OP1-4 Decay 2 Time\r\nOP 82 to 85: OP1-4 Sustain Level\r\nOP 86 to 89: OP1-4 Release Time\r\n```\r\n\r\n## Instructions\r\n\r\n* Connect your PC to the USB Port of the MIDIbox core\r\n* Upload the .hex firmware using MIOS Studio\r\n* Connect FB01 MIDI In to MIDIbox core MIDI OUT2\r\n* Send notes to \"USB\" (native MIDI will be added later).",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}

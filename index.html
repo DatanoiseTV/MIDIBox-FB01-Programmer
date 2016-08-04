@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>MIDIBox FB-01 Programmer by DatanoiseTV</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>MIDIBox FB-01 Programmer</h1>
+        <p>Yamaha FB-01 4-op FM Synth MIDI CC proxy / programmer</p>
+
+        <p class="view"><a href="https://github.com/DatanoiseTV/MIDIBox-FB01-Programmer">View the Project on GitHub <small>DatanoiseTV/MIDIBox-FB01-Programmer</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/DatanoiseTV/MIDIBox-FB01-Programmer/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/DatanoiseTV/MIDIBox-FB01-Programmer/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/DatanoiseTV/MIDIBox-FB01-Programmer">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>This project is an early-stage MIDI CC to SysEx translation firmware based on the MIDIBox core
+and allows you to semi-realtime control the parameters of your Yamaha FB-01 4-op FM Synthesizer
+by sending MIDI Controller Change messages instead of SysEx, making it useable in every DAW / MIDI
+Sequencer.</p>
+
+<h2>
+<a id="cc-map" class="anchor" href="#cc-map" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CC Map</h2>
+
+<pre><code>CC 50 to 53: OP1-4 "Volume"
+CC 54 to 57: OP1-4 "Volume Fine"
+CC 58 to 61: OP1-4 Response Curb
+CC 62 to 65: OP1-4 Depth Level
+CC 66 to 69: OP1-4 Multiplier
+OP 70 to 73: OP1-4 Fine Tuning
+OP 74 to 77: OP1-4 Attack Time
+OP 78 to 81: OP1-4 Decay 2 Time
+OP 82 to 85: OP1-4 Sustain Level
+OP 86 to 89: OP1-4 Release Time
+</code></pre>
+
+<h2>
+<a id="instructions" class="anchor" href="#instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instructions</h2>
+
+<ul>
+<li>Connect your PC to the USB Port of the MIDIbox core</li>
+<li>Upload the .hex firmware using MIOS Studio</li>
+<li>Connect FB01 MIDI In to MIDIbox core MIDI OUT2</li>
+<li>Send notes to "USB" (native MIDI will be added later).</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/DatanoiseTV">DatanoiseTV</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
